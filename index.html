@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricelist Apps Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background Elements -->
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+  <div class="bg-shape shape-3"></div>
+
+  <header>
+    <div class="container header-content">
+      <h1>Pricelist <span class="highlight">Apps Premium</span></h1>
+      <p class="subtitle">Best Deals for Your Digital Needs</p>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Cari aplikasi..." />
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Featured Section -->
+    <section class="featured-section">
+      <h2 class="section-title">🔥 Top 5 Paling Laris</h2>
+      <div id="featuredGrid" class="featured-grid">
+        <!-- Featured items injected here -->
+      </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-filter-container">
+      <button class="category-btn active" data-category="all">Semua</button>
+      <button class="category-btn" data-category="Video">Video & Film</button>
+      <button class="category-btn" data-category="Music">Musik</button>
+      <button class="category-btn" data-category="Productivity">Produktivitas</button>
+      <button class="category-btn" data-category="VPN">VPN & Tools</button>
+    </section>
+
+    <h2 class="section-title">Semua Aplikasi</h2>
+    <div id="productGrid" class="product-grid">
+      <!-- Products will be injected here via JS -->
+    </div>
+  </main>
+
+  <footer class="container">
+    <p>Update 23 Januari 2026</p>
+    <div class="social-links">
+      <a href="https://wa.me/62895321547404" target="_blank" class="social-link">
+        Whatsapp: 0895-3215-47404
+      </a>
+    </div>
+  </footer>
+
+  <!-- Modal for Variants -->
+  <div id="variantModal" class="modal">
+    <div class="modal-content glass-card">
+      <span class="close-modal">&times;</span>
+      <h2 id="modalTitle">Product Name</h2>
+      <div id="modalVariants" class="variants-list">
+        <!-- Variants injected here -->
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
